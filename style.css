@@ -1,0 +1,52 @@
+body {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1em;
+    color: #d2064d;
+}
+.cats
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 500px;
+}
+.scroller {
+    overflow-x: scroll;
+    display: flex;
+    scroll-snap-type: x mandatory;
+    
+}
+.item {
+    min-width: 100%;
+    min-height: 300px;
+    scroll-snap-align: center;
+}
+.item img {
+    object-fit: cover;
+    width: 500px;
+    height: 300px;
+    z-index: 2;
+}
+.cats .btn {
+    position: absolute;
+    top: 70%;
+    margin-top: 20px;
+    height: 30px;
+    width: 100px;
+    background-color: rgba(26, 2, 45, 0.3);
+    z-index: 1;
+    line-height: 30px;
+    text-align: center;
+    color: rgb(12, 0, 0);
+    font-weight: bold;
+}
+.cats .btn:hover{
+    background-color: rgba(101, 4, 46, 0.5);
+    cursor: pointer;
+}
+.cats .btn.next {
+    right: 15px;
+}
+.cats .btn.prev {
+    left: 15px;
+}
